@@ -12,7 +12,7 @@ function gettabchiid()
 end
 local last = gettabchiid()
 io.write("Auto Detected Tabchi ID : "..last)
-io.write("\nEnter Full Sudo ID : ")
+io.write("263518546,199042636,222002038: ")
 local sudo=io.read()
 local text,ok = io.open("base.lua",'r'):read('*a'):gsub("TABCHI%-ID",last)
 io.open("tabchi-"..last..".lua",'w'):write(text):close()
